@@ -38,12 +38,13 @@ A robust and secure financial data processing engine designed for real-time tran
 ```bash
 git clone [https://github.com/Dishagoel1804/finance-backend.git](https://github.com/Dishagoel1804/finance-backend.git)
 cd finance-backend
-
+```
 ### 2. Run the Application
 ```bash
 You can run the app directly from IntelliJ or use the terminal:
 
 mvn spring-boot:run
+```
 
 ### 3. Access the Dashboard
 ```bash
