@@ -50,6 +50,7 @@ mvn spring-boot:run
 ```bash
 Once started, explore the API via the Swagger UI:
 🔗 http://localhost:8080/swagger-ui/index.html
+```
 
 🔐 Testing the Security Logic
 To verify that the Authentication and PATCH endpoints are working correctly:
