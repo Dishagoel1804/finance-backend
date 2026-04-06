@@ -38,3 +38,34 @@ A robust and secure financial data processing engine designed for real-time tran
 ```bash
 git clone [https://github.com/Dishagoel1804/finance-backend.git](https://github.com/Dishagoel1804/finance-backend.git)
 cd finance-backend
+
+### 2. Run the Application
+```bash
+You can run the app directly from IntelliJ or use the terminal:
+
+mvn spring-boot:run
+
+### 3. Access the Dashboard
+```bash
+Once started, explore the API via the Swagger UI:
+🔗 http://localhost:8080/swagger-ui/index.html
+
+🔐 Testing the Security Logic
+To verify that the Authentication and PATCH endpoints are working correctly:
+
+User Registration: Use the POST /api/users/signup endpoint to create a user. Ensure you set "role": "ADMIN".
+
+Authentication: Click the Authorize 🔓 button at the top of the Swagger page. Enter the username and password you just created.
+
+Protected Action: Navigate to the PATCH endpoint for users. Enter a valid User ID (e.g., 1) and execute.
+
+Validation: A 200 OK response confirms successful RBAC authorization. (Attempting this without the Authorize step will return 401 Unauthorized).
+
+🤖 AI Collaboration Log
+During development, AI-assisted tools were utilized to solve complex architectural challenges:
+
+Security Configuration: Resolved circular dependency loops and session management filters.
+
+Environment Setup: Debugged Maven SDK mismatches and dependency sync errors.
+
+JPA Optimization: Configured H2 persistence layers for consistent data state during testing.
